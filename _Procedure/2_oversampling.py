@@ -4,7 +4,7 @@ from sklearn.preprocessing import MinMaxScaler
 import numpy as np
 
 # Load the dataset
-file_path = 'E:\Final year project\Fall Classificaiton\Fall_Classification\Thigh\Thigh_combined_data.csv'
+file_path = 'B:\Fall_Classification\Wrist\Wrist_combined_data.csv'
 data = pd.read_csv(file_path)
 
 # Define sensor columns, label, and metadata
@@ -40,7 +40,7 @@ oversampled_data = pd.concat([oversampled_data, metadata_resampled], axis=1)
 
 
 # Save the balanced and normalized dataset
-oversampled_file_path = 'E:\Final year project\Fall Classificaiton\Fall_Classification\Thigh\Balanced_Thigh_combined_data.csv'
+oversampled_file_path = 'B:\Fall_Classification\Wrist\Wrist_balanced_data.csv'
 oversampled_data.to_csv(oversampled_file_path, index=False)
 
 print("Oversampling and normalization complete with metadata assigned. Data saved to:", oversampled_file_path)

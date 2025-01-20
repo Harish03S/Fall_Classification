@@ -2,10 +2,10 @@ import os
 import pandas as pd
 
 # Define the base directory containing the location data
-base_dir = 'E:\Final year project\Fall Classificaiton\Fall_Classification\Thigh'  # Replace with the path to the "Ankle" directory
+base_dir = 'B:\Fall_Classification\Wrist'  # Replace with the path to the "Ankle" directory
 
 # Define activity folders
-activities = ['Activities of daily living', 'Forward fall labeled', 'Backward fall labeled', 'Lateral fall labeled']
+activities = ['Activities of daily living', 'Forward fall Labeled', 'Backward fall Labeled', 'Lateral fall Labeled']
 
 # Initialize an empty list to store all data
 all_data = []
@@ -56,7 +56,7 @@ if all_data:
     combined_data = pd.concat(all_data, ignore_index=True)
 
     # Save the combined data to a new CSV file
-    output_file = os.path.join(base_dir, 'Thigh_combined_data.csv')
+    output_file = os.path.join(base_dir, 'Wrist_combined_data.csv')
     combined_data.to_csv(output_file, index=False)
     print(f"Combined data saved to {output_file}")
 else:

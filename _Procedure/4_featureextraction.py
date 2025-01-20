@@ -82,13 +82,13 @@ step_size = 30    # 50% overlap
 sensor_columns = ['ax', 'ay', 'az', 'wx', 'wy', 'wz', 'Bx', 'By', 'Bz']
 
 # Load dataset
-file_path = 'E:\Final year project\Fall Classificaiton\Fall_Classification\Thigh\z_score_norm.csv'
+file_path = 'B:\Fall_Classification\Wrist\Wrist_normalised_data.csv'
 data = pd.read_csv(file_path)
 
 # Extract features
 extracted_features = extract_features_grouped(data, sensor_columns, window_size, step_size)
 
 # Save to CSV
-output_file = 'E:\Final year project\Fall Classificaiton\Fall_Classification\Thigh\Extracted_Features_thigh.csv'
+output_file = 'B:\Fall_Classification\Wrist\Wrist_featureextracted_data.csv'
 extracted_features.to_csv(output_file, index=False)
 print(f"Feature extraction complete. Features saved to: {output_file}")
