@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 # Define the base directory containing the location data
-base_dir = 'B:\Fall_Classification\Ankle'  # Replace with the path to the "Ankle" directory
+base_dir = 'E:/Final year project/Fall Classificaiton/Fall_Classification/Thigh'
 
 # Directory for "Activities of daily living"
 adl_dir = os.path.join(base_dir, 'Activities of daily living')
