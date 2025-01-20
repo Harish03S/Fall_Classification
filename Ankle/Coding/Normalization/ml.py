@@ -26,7 +26,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, stratif
 models = {
     "Random Forest": RandomForestClassifier(n_estimators=100, random_state=42),
     "Support Vector Machine": SVC(kernel='rbf', C=1, gamma='scale', random_state=42),
-    "K-Nearest Neighbors": KNeighborsClassifier(n_neighbors=5),
+    "K-Nearest Neighbors": KNeighborsClassifier(n_neighbors=3),
     "Logistic Regression": LogisticRegression(max_iter=1000, random_state=42)
 }
 
